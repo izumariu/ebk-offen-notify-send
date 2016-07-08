@@ -8,9 +8,9 @@ end
 # Auf Kompatibilität überprüfen
 
 if !progexist?("notify-send")
-	puts "Es tut mir außerordentlich leid, aber dieses Skript ist nicht mit deinem Betriebssystem verfügbar."
-	puts "Besuche doch einfach das zugehörige Github-Repository und lade dir den Installer herunter,"
-	puts "wenn du dir nicht sicher bist, welche Version du benötigst."
+	puts "Es tut mir ausserordentlich leid, aber dieses Skript ist nicht mit deinem Betriebssystem verfuegbar."
+	puts "Besuche doch einfach das zugehoerige Github-Repository und lade dir den Installer herunter,"
+	puts "wenn du dir nicht sicher bist, welche Version du benoetigst."
 	puts "(der Installer existiert noch nicht, wird aber noch mitsamt anderen Versionen bald dazukommen)"
 	abort
 end
@@ -21,7 +21,7 @@ $OPEN = spaceOpen?
 
 def sendmsg(urgency,head,text);`notify-send -u #{urgency} "#{head}" "#{text}"`;nil;end
 sendmsg("low","Du hast das Skript erfolgreich gestartet,", "wenn du das hier siehst.")
-sendmsg("low","Das Space ist momentan übrigens...",(spaceOpen? ? ("...offen!") : ("...geschlossen!")))
+sendmsg("low","Das Space ist momentan uebrigens...",(spaceOpen? ? ("...offen!") : ("...geschlossen!")))
 
 loop do
 	if spaceOpen? != $OPEN
