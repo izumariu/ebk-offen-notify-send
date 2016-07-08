@@ -4,7 +4,7 @@ benutzt notify-send oder ähnliches, um auf eine änderung des öffnungsstatus v
 ## Achtung!!
 Das Skript funktioniert noch nicht überall(und wird es auf Windows/Mac auch nie tun). Um zu überprüfen, ob dein PC betroffen ist,
 tippe einfach in die Bash
-    whereis notify-send
+    [whereis notify-send]
 ein. Sollte hier nur
-    notify-send:
+    [notify-send:]
 ausgespuckt werden, funktioniert das Skript bei dir nicht.
